@@ -13,7 +13,7 @@ Developed as part of the Developer Akademie GmbH advanced training program.
 ## Clone
 
 ```sh
-git clone --recurse-submodules https://github.com/VitaliBanmann/Modul-B08-KanMind.git
+git clone --recurse-submodules https://github.com/VitaliBanmann/Kan-Mind.git
 ```
 
 ## License

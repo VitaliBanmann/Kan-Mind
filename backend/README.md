@@ -357,11 +357,17 @@ Run the test suite:
 
 Run tests with coverage:
 
-    coverage run manage.py test
+    coverage run --source=auth_app,board_app,task_app,core --omit="*/tests/*,*/migrations/*" manage.py test
 
 Display the coverage report:
 
-    coverage report
+    coverage report --show-missing --fail-under=95
+
+Create five sample tasks for an existing user in a local development database:
+
+    python manage.py seed_sample_tasks --email user@example.com --board-title "KanMind Sample Board"
+
+This optional command creates a board if needed and adds five tasks across the `high`, `medium`, and `low` priorities. Do not run it against production data.
 
 Start the development server:
 
