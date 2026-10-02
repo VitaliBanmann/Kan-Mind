@@ -7,13 +7,13 @@ Developed as part of the Developer Akademie GmbH advanced training program.
 ## Project Structure
 
 - `backend/` contains the Django REST Framework API. See its [README](backend/README.md) for setup and test instructions.
-- `frontend/` is included as a Git submodule. Clone with `--recurse-submodules` to fetch it.
+- `frontend/` contains the web application source and assets.
 - The PDFs in this repository contain the API specification and the Django/DRF project checklist.
 
 ## Clone
 
 ```sh
-git clone --recurse-submodules https://github.com/VitaliBanmann/Kan-Mind.git
+git clone https://github.com/VitaliBanmann/Kan-Mind.git
 ```
 
 ## License
