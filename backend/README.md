@@ -98,8 +98,8 @@ The same variables must be configured as Render environment variables.
 
 ### 1. Clone the repository
 
-    git clone https://github.com/VitaliBanmann/Projekte-Backup.git
-    cd Projekte-Backup/Modul-B08-KanMind/backend
+    git clone https://github.com/VitaliBanmann/Kan-Mind.git
+    cd Kan-Mind/backend
 
 ### 2. Create a virtual environment
 
@@ -296,14 +296,14 @@ same repository and communicates with this Django REST API.
 
 ## Render Deployment
 
-Create a Render Web Service from the `VitaliBanmann/Projekte-Backup` repository
-and select branch `main`.
+Create a Render Web Service from the `VitaliBanmann/Kan-Mind` repository and
+select branch `main`.
 
 Use these service settings:
 
 | Setting | Value |
 |---|---|
-| Root Directory | `Modul-B08-KanMind/backend` |
+| Root Directory | `backend` |
 | Build Command | `pip install -r requirements.txt` |
 | Pre-Deploy Command | `python manage.py migrate` |
 | Start Command | `gunicorn core.wsgi:application --bind 0.0.0.0:$PORT` |
@@ -316,7 +316,7 @@ Render and never commit them:
 |---|---|
 | `DJANGO_SECRET_KEY` | A new long random Django secret key |
 | `DJANGO_DEBUG` | `False` |
-| `DJANGO_ALLOWED_HOSTS` | `projekte-backup.onrender.com` |
+| `DJANGO_ALLOWED_HOSTS` | `kanmind-backend-n6cg.onrender.com` |
 | `DATABASE_URL` | Supabase Session Pooler PostgreSQL URI |
 | `DJANGO_CORS_ALLOWED_ORIGINS` | The deployed frontend HTTPS origin |
 | `DJANGO_CSRF_TRUSTED_ORIGINS` | The deployed frontend HTTPS origin |
@@ -329,7 +329,7 @@ password only in Render. URL-encode special characters in the password.
 
 After deployment, verify:
 
-    https://projekte-backup.onrender.com/healthz/
+    https://kanmind-backend-n6cg.onrender.com/healthz/
 
 The response must be:
 
