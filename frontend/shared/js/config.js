@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://kanmind-backend-n6cg.onrender.com/api/';
+const API_BASE_URL = 'https://kan-mind-backend.onrender.com/api/';
 
 const LOGIN_URL = 'login/';
 
