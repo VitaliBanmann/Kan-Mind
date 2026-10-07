@@ -8,9 +8,13 @@ Dieses Projekt ist ein einfaches Frontend, das mit **Vanilla JavaScript** (reine
 
 ## Voraussetzungen
 
-- Ein separates Django-Backend (`KanMind-Backend`):
+Lege beide Repositories als Geschwisterordner in einem gemeinsamen
+übergeordneten Ordner ab:
 
-      git clone https://github.com/VitaliBanmann/Kan-Mind-Backend.git
+    mkdir KanMind
+    cd KanMind
+    git clone https://github.com/VitaliBanmann/Kan-Mind-Backend.git
+    git clone https://github.com/VitaliBanmann/Kan-Mind-Frontend.git
 
 - Visual Studio Code mit der **Live Server**-Erweiterung oder eine ähnliche Möglichkeit, die `index.html` auf oberster Ebene lokal im Browser zu starten.
 
@@ -18,11 +22,13 @@ Dieses Projekt ist ein einfaches Frontend, das mit **Vanilla JavaScript** (reine
 
 ## Nutzung
 
-1. Stelle sicher, dass das Backend `KanMind` läuft.
-   Das Frontend verwendet standardmäßig `http://127.0.0.1:8000/api/`. Passe
-   `shared/js/config.js` an, wenn dein Backend unter einer anderen Adresse läuft.
-2. Öffne dieses Projekt in **Visual Studio Code**.
-3. Rechtsklicke auf die Datei `index.html` auf oberster Ebene und wähle **Open with Live Server**, um das Projekt zu starten.
+1. Richte das Backend im Ordner `Kan-Mind-Backend` nach dessen README ein.
+2. Starte dort das Backend mit `python manage.py runserver`.
+3. Öffne den Ordner `Kan-Mind-Frontend` in **Visual Studio Code**.
+4. Rechtsklicke auf `index.html` und wähle **Open with Live Server**.
+
+Das Frontend verwendet standardmäßig `http://127.0.0.1:8000/api/`. Passe
+`shared/js/config.js` an, wenn dein Backend unter einer anderen Adresse läuft.
 
 ---
 
