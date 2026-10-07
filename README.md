@@ -8,7 +8,10 @@ Dieses Projekt ist ein einfaches Frontend, das mit **Vanilla JavaScript** (reine
 
 ## Voraussetzungen
 
-- Ein funktionierendes Django-Backend (`KanMind`), das **nicht** in diesem Projekt enthalten ist.
+- Ein separates Django-Backend (`KanMind-Backend`):
+
+      git clone https://github.com/VitaliBanmann/Kan-Mind-Backend.git
+
 - Visual Studio Code mit der **Live Server**-Erweiterung oder eine ähnliche Möglichkeit, die `index.html` auf oberster Ebene lokal im Browser zu starten.
 
 ---
