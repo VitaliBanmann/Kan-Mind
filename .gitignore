@@ -1,14 +1,1 @@
-.env
-.env.*
-!.env.example
-.venv/
-venv/
-__pycache__/
-*.py[cod]
-db.sqlite3
-db.sqlite3-journal
-.coverage
-htmlcov/
-*.log
-node_modules/
-frontend/shared/js/config.local.js
+shared/js/config.local.js
